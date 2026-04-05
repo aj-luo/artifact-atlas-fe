@@ -1,0 +1,81 @@
+:root {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  display: grid;
+  grid-template-rows: minmax(220px, 0.38fr) 1fr auto;
+  height: 100vh;
+}
+
+.item1 {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.logo_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: min(260px, 28vh);
+  width: auto;
+  max-width: 92vw;
+}
+
+.hdlogo {
+  height: 60px;
+}
+
+.item2 {
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item3 {
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner_logos {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.metsvg {
+  height: 40px;
+  width: 40px;
+  color: white;
+  display: block;
+}
+
+.partner_divider {
+  width: 1px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.halfdomelogo {
+  height: 60px;
+  width: auto;
+  display: block;
+  margin-left: -8px;
+}
