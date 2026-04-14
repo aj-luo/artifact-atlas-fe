@@ -6,6 +6,7 @@ import Gamescreen from '../../Gamescreen/Gamescreen.jsx'
 import Homepage from '../../Homepage/Homepage.jsx'
 import logo from '../../assets/AA_logo.png'
 import halfdome from '../../assets/half-dome-logo.png'
+import AdBanner from '../../Adsense/AdBanner.jsx'
 
 export default function Home() {
   const [started, setStarted] = useState(false);
@@ -37,10 +38,24 @@ export default function Home() {
       </div>
       
       <div className='item2'>
-        {started 
-          ? <Gamescreen /> 
-          : <Homepage onStart={handleStart} isLoading={isLoading} />
-        }
+        <div className='column1'>
+          <AdBanner
+            dataAdSlot="8887177320"
+            adStyle={{ display: 'inline-block', width: '160px', height: '600px' }}
+          />
+        </div>
+        <div className='column2'>
+          {started
+            ? <Gamescreen />
+            : <Homepage onStart={handleStart} isLoading={isLoading} />
+          }
+        </div>
+        <div className='column3'>
+          <AdBanner
+            dataAdSlot="2573050418"
+            adStyle={{ display: 'inline-block', width: '160px', height: '600px' }}
+          />
+        </div>
       </div>
 
       <div className='item3'>
